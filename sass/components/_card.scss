@@ -45,20 +45,24 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
     &--1 {
-      background-image: url(../img/nat-5.jpg),
-        linear-gradient(
-          to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
-        );
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+        url(../img/nat-5.jpg);
     }
+
     &--2 {
-      background-image: url(../img/nat-5.img);
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+        url(../img/nat-6.jpg);
     }
+
     &--3 {
-      background-image: url(../img/nat-5.img);
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+        url(../img/nat-7.jpg);
     }
+
   }
 
   &__heading {
@@ -66,12 +70,13 @@
     font-weight: 300;
     text-transform: uppercase;
     color: $color-white;
-    position: absolute;
+    position: relative;
     text-align: right;
     top: 15rem;
     width: 75%;
   }
   &__heading-span {
+    padding: 1rem 1.5rem;
     &--1 {
       background-image: linear-gradient(
         to right bottom,
