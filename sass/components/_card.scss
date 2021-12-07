@@ -1,11 +1,12 @@
 .card {
+  //FUNTIONALITY
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   .card__side {
-    height: 50rem;
+    height: 52rem;
     width: 100%;
 
     transition: all 0.8s ease;
@@ -38,7 +39,7 @@
   &:hover &__side--back {
     transform: rotateY(0deg);
   }
-
+  //FRONT SIDE STYLING
   &__picture {
     background-size: cover;
     height: 23rem;
@@ -84,16 +85,37 @@
     position: absolute;
     text-align: right;
     top: 12rem;
-    width: 100%;
+    right: 2em;
+    width: 75%;
   }
   &__heading-span {
     padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     &--1 {
       background-image: linear-gradient(
         to right bottom,
         rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-light, 0.85)
+        rgba($color-secondary-dark, 0.85)
       );
+    }
+  }
+
+  &__details{
+    padding: 3rem;
+    ul{
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child){
+          border-bottom: 1px solid $color-gray-light-2;
+        }
+      }
     }
   }
 }
