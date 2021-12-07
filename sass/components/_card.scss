@@ -47,22 +47,33 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    
+
     &--1 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
         url(../img/nat-5.jpg);
     }
 
     &--2 {
-        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
         url(../img/nat-6.jpg);
     }
 
     &--3 {
-        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
         url(../img/nat-7.jpg);
     }
-
   }
 
   &__heading {
@@ -70,10 +81,10 @@
     font-weight: 300;
     text-transform: uppercase;
     color: $color-white;
-    position: relative;
+    position: absolute;
     text-align: right;
-    top: 15rem;
-    width: 75%;
+    top: 12rem;
+    width: 100%;
   }
   &__heading-span {
     padding: 1rem 1.5rem;
