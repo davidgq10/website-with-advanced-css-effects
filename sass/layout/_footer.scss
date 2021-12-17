@@ -1,9 +1,11 @@
 .footer {
   background-color: $color-gray-dark-3;
-  padding: 18rem;
+  padding: 10rem 0;
   font-size: 1.3rem;
+  
 
   &__logo-box {
+    margin-top: 3rem;
     text-align: center;
     margin-bottom: 8rem;
   }
@@ -36,6 +38,7 @@
       color: $color-gray-light;
       text-decoration: none;
       text-transform: uppercase;
+      padding-left: 1rem;
       display: inline-block;
       transition: all 0.2s;
       background-color: $color-gray-dark-3;
