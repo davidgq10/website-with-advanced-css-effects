@@ -1,29 +1,36 @@
-.feature-box{
-    background-color: rgba($color-white, .8);
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
-    transition: transform .3s;
-    &__icon{
-        font-size: 6rem;
-        margin: .5rem;
-        background-image: linear-gradient(
-            to right,
-            $color-primary-light,
-            $color-primary-dark
-          );
-          -webkit-background-clip: text;
-          color: transparent;
-          padding: 2px;
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+  &__icon {
+    font-size: 6rem;
+    margin: 0.5rem;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 2px;
+    @include respond(tab-port) {
+      margin-bottom: 0;
     }
+  }
 
-    &:hover{
-        transform: translateY(-3rem) scale(1.05);
-        box-shadow: 0 2.5rem 6rem rgba($color-black,.25);
-    }
-    &__text{
-        font-size: 1.4rem;
-    }
+  &:hover {
+    transform: translateY(-3rem) scale(1.05);
+    box-shadow: 0 2.5rem 6rem rgba($color-black, 0.25);
+  }
+  &__text {
+    font-size: 1.4rem;
+  }
 }
