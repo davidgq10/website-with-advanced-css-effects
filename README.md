@@ -1,4 +1,4 @@
 # website-with-advanced-css-effects
-These is a website created after completing the advanced CSS effects. 
+This is a website created after completing the advanced CSS effects. 
 
 
